@@ -12,4 +12,8 @@
     <string name="btnLogInUser">Log In</string>
     <string name="textEmailLogin">Please Enter your LogIn Email</string>
     <string name="textPasswordLogin">Please Enter your Password</string>
+    <string name="logout">Logout</string>
+    <string name="sendTweet">Send Tweet</string>
+    <string name="viewTweets">View Tweets</string>
+    <string name="sendATweet">What\'s on your Mind ?</string>
 </resources>

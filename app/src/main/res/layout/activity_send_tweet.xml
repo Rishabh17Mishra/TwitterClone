@@ -1,9 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F0F3F5"
     tools:context=".SendTweetActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/edtSendTweet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="8dp"
+        android:background="#B4C0E0"
+        android:textColorHint="#070505"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="4dp"
+        android:textColor="#000000"
+        android:textStyle="italic|bold"
+        android:textSize="15sp"
+        android:fontFamily="@font/amita"
+        android:hint="@string/sendATweet"
+        android:inputType="textPersonName"
+        android:importantForAutofill="no" tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/btnSendTweet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSendTweet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:background="#2196F3"
+        android:fontFamily="@font/amita"
+        android:onClick="sendTweet"
+        android:text="@string/sendTweet"
+        android:textColor="#0A0C0B"
+        android:textSize="12sp"
+        android:textStyle="italic|bold" />
+
+    <ListView
+        android:id="@+id/listViewTweets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:layout_marginTop="12dp"
+        android:background="#FFFFFF"
+        android:layout_below="@+id/btnSendTweet"  tools:targetApi="o">
+    </ListView>
+
+</RelativeLayout>
