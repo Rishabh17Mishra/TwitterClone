@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Twitter Clone</string>
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">rNviKYoK9e4Xp9dmcnLHYiGgtKrXZva6XHkOnvG6</string>
+    <string name="back4app_client_key">WRJiqGMQdyOhkgn73scn6j9hZZ6AavVtbJaZJmF1</string>
+    <string name="textEmail">Enter Your Email</string>
+    <string name="textUsername">Enter your Username</string>
+    <string name="textPassword">Enter your Pasword</string>
+    <string name="btnSignUpUser">Sign Up</string>
+    <string name="btnLogInUser">Log In</string>
+    <string name="textEmailLogin">Please Enter your LogIn Email</string>
+    <string name="textPasswordLogin">Please Enter your Password</string>
+</resources>

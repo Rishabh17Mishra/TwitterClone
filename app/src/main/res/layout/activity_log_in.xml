@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:onClick="rootLayoutTapped"
+    tools:context=".LogInActivity">
+
+    <ImageView
+        android:id="@+id/imgBrandIconLogin"
+        android:layout_width="149dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/twitter"
+        tools:ignore="ContentDescription"/>
+
+    <EditText
+        android:id="@+id/textEmailLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="#B6B0B0"
+        android:fontFamily="@font/amita"
+        android:hint="@string/textEmailLogin"
+        android:inputType="textEmailAddress"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBrandIconLogin" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/textPasswordLogin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:background="#B6B0B0"
+        android:fontFamily="@font/amita"
+        android:hint="@string/textPasswordLogin"
+        android:inputType="textPassword"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:textColor="#000000"
+        android:textColorHint="#000000"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textEmailLogin" tools:targetApi="o"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnLogInUserLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/amita"
+        android:padding="10dp"
+        android:text="@string/btnLogInUser"
+        android:background="#2196F3"
+        android:textColor="#0E0505"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPasswordLogin" />
+
+    <Button
+        android:id="@+id/btnSignUpUserLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/amita"
+        android:padding="10dp"
+        android:text="@string/btnSignUpUser"
+        android:background="#2196F3"
+        android:textColor="#0C0A0A"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogInUserLogin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
