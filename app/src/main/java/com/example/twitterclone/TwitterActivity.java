@@ -104,21 +104,18 @@ public class TwitterActivity extends AppCompatActivity implements AdapterView.On
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
         CheckedTextView checkedTextView =  (CheckedTextView) view;
         if (checkedTextView.isChecked()) {
-            Toasty.info( TwitterActivity.this, tUsers.get( position ) + " is now followed", Toasty.LENGTH_SHORT ).show();
             ParseUser.getCurrentUser().add("fanOf", tUsers.get(position));
         } else {
             ParseUser.getCurrentUser().getList("fanOf").remove(tUsers.get(position));
             List currentUserFanOfList = ParseUser.getCurrentUser().getList("fanOf");
             ParseUser.getCurrentUser().remove("fanOf");
             ParseUser.getCurrentUser().put("fanOf", currentUserFanOfList);
-            Toasty.info( TwitterActivity.this, tUsers.get( position ) + " is now Unfollowed", Toasty.LENGTH_SHORT ).show();
         }
 
         ParseUser.getCurrentUser().saveInBackground( new SaveCallback() {
             @Override
             public void done(ParseException e) {
                 if (e == null) {
-                    Toasty.success( TwitterActivity.this, "Saved", Toasty.LENGTH_SHORT ).show();
                 }
             }
         } );

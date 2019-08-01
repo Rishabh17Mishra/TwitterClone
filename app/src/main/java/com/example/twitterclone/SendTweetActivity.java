@@ -44,6 +44,7 @@ public class SendTweetActivity extends AppCompatActivity {
         try{
             ParseQuery<ParseObject> parseQuery = ParseQuery.getQuery("MyTweet");
             parseQuery.whereContainedIn("user", ParseUser.getCurrentUser().getList("fanOf"));
+            parseQuery.orderByDescending("createdAt");
             parseQuery.findInBackground( new FindCallback<ParseObject>() {
                 @Override
                 public void done(List<ParseObject> objects, ParseException e) {

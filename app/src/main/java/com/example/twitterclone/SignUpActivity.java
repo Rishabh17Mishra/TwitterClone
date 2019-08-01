@@ -79,6 +79,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                             if (e == null) {
                                 Toasty.success( SignUpActivity.this, signUpUser.getUsername() + " is Signed Up ", Toasty.LENGTH_SHORT ).show();
                                 transitionToSocialMediaActivity();
+                            //This line makes a user follow itself
+                                ParseUser.getCurrentUser().add( "fanOf", ParseUser.getCurrentUser().get( "username" ) );
                             } else {
                                 Toasty.error( SignUpActivity.this, e.getMessage(), Toasty.LENGTH_SHORT ).show();
                             }

@@ -64,8 +64,11 @@ public class LogInActivity extends AppCompatActivity implements View.OnClickList
                         @Override
                         public void done(ParseUser user, ParseException e) {
                             if (user != null && e == null) {
+                                ParseUser.getCurrentUser().add( "fanOf", ParseUser.getCurrentUser().get( "username" ) );
                                 Toasty.success( LogInActivity.this, user.getUsername() + " is Logged in Successfully ", Toasty.LENGTH_SHORT ).show();
                                 transitionToSocialMediaActivity();
+                                //This line makes a user follow itself
+                                ParseUser.getCurrentUser().add( "fanOf", ParseUser.getCurrentUser().get( "username" ) );
                             } else {
                                 Toasty.error( LogInActivity.this, e.getMessage(), Toasty.LENGTH_SHORT ).show();
                             }
