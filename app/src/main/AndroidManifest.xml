@@ -13,7 +13,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SendTweetActivity"></activity>
+        <activity android:name=".WhatsAppChatActivity"></activity>
+        <activity android:name=".WhatsAppUsersActivity" />
+        <activity android:name=".SendTweetActivity" />
         <activity android:name=".TwitterActivity" />
         <activity android:name=".LogInActivity" />
         <activity android:name=".SignUpActivity">

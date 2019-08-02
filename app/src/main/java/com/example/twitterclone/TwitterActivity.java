@@ -91,10 +91,12 @@ public class TwitterActivity extends AppCompatActivity implements AdapterView.On
                 });
                 break;
             case R.id.sendTweetItem:
-
                 Intent intent = new Intent(TwitterActivity.this, SendTweetActivity.class);
                 startActivity(intent);
-
+                break;
+            case R.id.sendMessageItem :
+                Intent intent1 = new Intent( TwitterActivity.this, WhatsAppUsersActivity.class );
+                startActivity( intent1 );
                 break;
         }
         return super.onOptionsItemSelected( item );

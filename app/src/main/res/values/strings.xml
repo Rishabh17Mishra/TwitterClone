@@ -16,4 +16,7 @@
     <string name="sendTweet">Send Tweet</string>
     <string name="viewTweets">View Tweets</string>
     <string name="sendATweet">What\'s on your Mind ?</string>
+    <string name="sendMessage">Message</string>
+    <string name="typeHere">Type Here...</string>
+    <string name="sendMessageWhatsapp">Send</string>
 </resources>

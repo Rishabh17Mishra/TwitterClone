@@ -33,10 +33,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="8dp"
         android:background="#2196F3"
+        android:textColor="#0A0C0B"
         android:fontFamily="@font/amita"
         android:onClick="sendTweet"
         android:text="@string/sendTweet"
-        android:textColor="#0A0C0B"
         android:textSize="12sp"
         android:textStyle="italic|bold" />
 

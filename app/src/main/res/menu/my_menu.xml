@@ -6,11 +6,15 @@
         android:id="@+id/logout_item"
         app:showAsAction="always"
         android:icon="@drawable/logout"
-        android:orderInCategory="101"/>
+        android:orderInCategory="102"/>
     <item android:title="@string/sendTweet"
         android:id="@+id/sendTweetItem"
         app:showAsAction="always"
         android:icon="@drawable/send"
         android:orderInCategory="100"/>
-
+    <item android:title="@string/sendTweet"
+        android:id="@+id/sendMessageItem"
+        app:showAsAction="always"
+        android:icon="@drawable/message"
+        android:orderInCategory="101"/>
 </menu>
